@@ -12,7 +12,11 @@
     "server": "webpack-dev-server"
   },
   "keywords": [
-    "BuckleScript", "ReasonML", "ReasonReact", "Markdown", "markdown-to-jsx"
+    "BuckleScript",
+    "ReasonML",
+    "ReasonReact",
+    "Markdown",
+    "markdown-to-jsx"
   ],
   "author": "DerivedMate",
   "license": "MIT",
