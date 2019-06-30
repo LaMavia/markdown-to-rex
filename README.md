@@ -18,7 +18,7 @@
 
 Just as the package [markdown-to-jsx](https://www.npmjs.com/package/markdown-to-jsx), you can you this one to parse markdown in ReasonML. Although the example below uses interpolated strings, you can still use the good old `"Double quotes string :)"`.
 
-```reasonml
+```reason
 [@react.component]
 let make = () =>
   <Markdown>
@@ -45,7 +45,7 @@ You can also use custom ReasonReact components, but there are some caveats...
 Firstyl, your component can't be passed directly as a prop (because of [ReasonReact design](https://reasonml.github.io/reason-react/docs/en/component-as-prop)).<br/>
 Secondly, your component's props (arguments) can be undefined, so you have to handle that.<br/>
 Here's a way to tackle these problems:
-```reasonml
+```reason
 // Here's our component. As you can see, it's nothing special.
 module FancyText {
   [@react.component]
@@ -87,7 +87,7 @@ ReactDOMRe.renderToElementWithId(
 );
 ```
 To our `Markdown` component, we're passing all of our overrides in a form of 
-```reasonml
+```reason
 array((
   string /*tag name*/, 
   override /*higher-order component passed through Markdown.override_of_component*/
@@ -96,7 +96,7 @@ array((
 
 ### <div id="us-ops"> Usage > Other Options
 You can also use the `forceInline` and `forceBlock` options from the original package.
-```reasonml
+```reason
 // They both default ot false (as stated in the original documentation)
 <Markdown forceInline=true forceBlock=false>
     {|
