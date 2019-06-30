@@ -73,7 +73,7 @@ let fancy_text:
     | None => <FancyText />
     };
 
-// After all of this hard work we can get to the good stuf - actually using out component
+// After all of this hard work we can get to the good stuff - actually using out component
 
 ReactDOMRe.renderToElementWithId(
   <Markdown
